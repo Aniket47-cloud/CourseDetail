@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Skill Course</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Web Security Mastery</h1>
+        <button id="enroll-btn">Enroll Course</button>
+    </header>
+
+    <main>
+        <!-- Course Overview Section -->
+        <section id="course-overview">
+            <h2>Course Overview</h2>
+            <p><strong>Level:</strong> Beginner</p>
+            <p><strong>Estimated Duration:</strong> 1 hour</p>
+            <p><strong>Videos:</strong> 5</p>
+            <p><strong>Average Rating:</strong> <span id="avg-rating">4.5</span>/5</p>
+            <div class="description">
+                <h2>Course Description</h2>
+                <p id="description-course"></p>
+            </div>
+        </section>
+
+        <!-- Video List Section -->
+        <section id="video-list">
+            <h2>Video List</h2>
+            <ul></ul>
+            <div id="progress-container">
+                <div id="progress-bar"></div>
+                <p id="progress-percentage">0% Completed</p>
+            </div>
+        </section>
+
+        <!-- Video Player Section -->
+        <section class="video-section" id="video-player">
+            <h2>Video Player</h2>
+            <iframe
+                src=""
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+            ></iframe>
+            <div id="summary">
+                <h3>Video Summary</h3>
+                <p>The AI-generated summary will appear here.</p>
+            </div>
+            <div class="video-controls">
+                <button id="prev-btn">Previous Video</button>
+                <button id="next-btn">Next Video</button>
+            </div>
+        </section>
+
+        <!-- Notes and Tools Section -->
+        <section id="notes-tools">
+            <h3>Notes</h3>
+            <textarea id="notes-input" placeholder="Add your notes here..."></textarea>
+            <button id="save-notes">Save Notes</button>
+
+        </section>
+        <section id="test-learning">
+            <h3>Test Your Learning</h3>
+            <ul id="questions-list"></ul>
+        </section>
+
+        <!-- Job-Seeker Tips Section -->
+        <section id="job-tips">
+            <h3>Job-Seeker Tips</h3>
+            <p>Explore job opportunities in cybersecurity:</p>
+            <ul>
+                <li>Entry-Level Cybersecurity Analyst</li>
+                <li>Penetration Tester</li>
+                <li>Incident Response Specialist</li>
+            </ul>
+        </section>
+
+        <!-- Discussion Section -->
+        <section id="discussion">
+            <h3>Community Discussion</h3>
+            <textarea id="comment-input" placeholder="Write a comment..."></textarea>
+            <button id="post-comment">Post Comment</button>
+            <ul id="comments-list"></ul>
+        </section>
+    </main>
+
+    <footer id="rate-course">
+       <div id="Rate">
+        <h3>Rate the Course</h3>
+        <div class="stars" id="stars-container">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        </div>
+        <p id="rating-feedback"></p>
+       </div>
+        <button id="download-certificate">Download Certificate</button>
+    </footer>
+
+   
+</body>
+</html>
